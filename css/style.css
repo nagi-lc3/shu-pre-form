@@ -11,6 +11,74 @@ body {
   background-image: url(../images/common_bg.png);
 }
 
+/* ヘッダー */
+
 #site-header {
-  background-color: rgb(141, 1, 1);
+  background-color: #aaa;
+  text-align: center;
+}
+
+#site-header a img {
+  width: 200px;
+  padding: 10px;
+}
+
+/* コンテンツ全体 */
+
+.inner-wrapper {
+  max-width: 880px;
+  padding: 15px;
+  margin: auto;
+}
+
+.inner-wrapper hr {
+  border-width: 3px 0 0 0;
+  border-color: #000
+}
+
+/* フォーム全体 */
+
+form {}
+
+/* 送信ボタン */
+
+.btn-group {
+  text-align: center;
+}
+
+/* フッター */
+
+footer {
+  text-align: center;
+  background-color: #aaa;
+}
+
+footer a {
+  display: inline-block;
+}
+
+footer a img {
+  width: 200px;
+  padding-top: 10px;
+}
+
+footer p {
+  padding-bottom: 10px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 8px;
+  border: 1px
+}
+
+table>tbody>tr>td {
+  padding: 15px 0 15px 30px;
+}
+
+table tbody tr {
+}
+
+table  {
+  border: 1px #808080 solid;
 }
