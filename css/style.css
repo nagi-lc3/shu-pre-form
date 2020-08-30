@@ -36,14 +36,118 @@ body {
   border-color: #000
 }
 
+/* イントロ */
+
+.intro h2, h1 {
+  letter-spacing: 0.2rem;
+}
+
+h1 {
+  margin-top: 60px;
+}
+
+.intro h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.intro p {
+  letter-spacing: 0.2rem;
+  line-height: 1.5rem;
+  margin-top: 3px;
+}
+
 /* フォーム全体 */
 
-form {}
+table {
+  width: 880px;
+  border-collapse: collapse;
+}
+
+label {
+  padding: 20px 0;
+}
+
+th {
+  width: 140px;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.require::after {
+  content: '必須';
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 11px;
+  font-size: .6875rem;
+  color: #e32d31;
+  line-height: 14px;
+  vertical-align: middle;
+}
+
+/* 学科 */
+
+#all {
+  display: none;
+}
+
+#first {
+  display: none;
+}
+
+#second {
+  display: none;
+}
+
+/* 氏名 */
+
+.inline {
+  display: inline-block;
+}
+
+.inline input[type="text"] {
+  width: 150px;
+}
+
+label[for="first_name"], label[for="first_name_kana"], label[for="family_name"], label[for="family_name_kana"] {
+  display: inline-block;
+  width: 30px;
+}
+
+label[for="first_name"], label[for="first_name_kana"] {
+  margin-left: 60px;
+}
 
 /* 送信ボタン */
 
 .btn-group {
   text-align: center;
+}
+
+/* 同伴者 */
+
+#with-yes {
+  margin-left: 30px;
+}
+
+#aa {
+  position: relative;
+}
+
+#aa::before {
+  content: '✓';
+  color: green;
+  position: absolute;
+  right: -240px;
+  top: 31px;
+  font-weight: normal;
+}
+
+#douhan {
+  display: none;
 }
 
 /* フッター */
@@ -66,19 +170,6 @@ footer p {
   padding-bottom: 10px;
 }
 
-table {
-  border-collapse: separate;
-  border-spacing: 8px;
-  border: 1px
-}
-
 table>tbody>tr>td {
-  padding: 15px 0 15px 30px;
-}
-
-table tbody tr {
-}
-
-table  {
-  border: 1px #808080 solid;
+  padding: 30px 0 30px 30px;
 }
