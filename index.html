@@ -32,14 +32,20 @@
 
       <!-- 諸注意 -->
       <section class="intro">
-        <h2>ご挨拶</h2>
-        <p>この度は、HAL就職作品プレゼンテーションにご参加の申し込みをいただきありがとうございます。</p>
-        <h2>登録方法について</h2>
-        <p>
-          参加を希望する学校の参加ボタンをチェックし、各分野ごとに見学予定人数を入力してください。<br>なお、一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください。<br>企業情報、ご担当者（代表者様）の情報も漏れなく入力ください。
-        </p>
-        <h2>ご注意</h2>
-        <p>複数の日程を一度に登録することは出来ません。<br>複数日程に参加いただく場合は、お手数ですが参加日程ごとに終了せずに連続で登録・確認及び送信してください。</p>
+        <div class="greeting">
+          <h2>ーご挨拶ー</h2>
+          <p>この度は、HAL就職作品プレゼンテーションにご参加の申し込みをいただきありがとうございます。</p>
+        </div>
+        <div class="method">
+          <h2>ー登録方法についてー</h2>
+          <p>
+            参加を希望する学校の参加ボタンをチェックし、各分野ごとに見学予定人数を入力してください。<br>なお、一人の方が複数の分野を見学される場合は、各々の分野にのべ人数としてカウントしてください。<br>企業情報、ご担当者（代表者様）の情報も漏れなく入力ください。
+          </p>
+        </div>
+        <div class="attention">
+          <h2>ーご注意ー</h2>
+          <p>複数の日程を一度に登録することは出来ません。<br>複数日程に参加いただく場合は、お手数ですが参加日程ごとに終了せずに連続で登録・確認及び送信してください。</p>
+        </div>
       </section>
 
 
@@ -148,8 +154,8 @@
                 <th class="require">郵便番号</th>
                 <td>
                   <div class="item">
-                    <input type="text" placeholder="例:000" id="郵便番号1" size="3" min="0" required>
-                    -<input type="text" placeholder="例:0000" id="郵便番号2"
+                    <input type="text" class="yuubinn1" placeholder="例:000" id="郵便番号1" size="3" min="0" required>
+                    -<input type="text" class="yuubinn2" placeholder="例:0000" id="郵便番号2"
                       onKeyUp="$('#郵便番号1').zip2addr({zip2:'#郵便番号2',pref:'#都道府県',addr:'#住所'});" size="4" min="0"
                       required>
                     <span></span>
@@ -332,9 +338,9 @@
                 <th class="require">電話番号</th>
                 <td>
                   <div class="item">
-                    <input type="tel" placeholder="例:000" required>
-                    -<input type="tel" placeholder="例:0000" required>
-                    -<input type="tel" placeholder="例:0000" required>
+                    <input type="tel" class="tel1" placeholder="例:000" required>
+                    -<input type="tel" class="tel2" placeholder="例:0000" required>
+                    -<input type="tel" class="tel3" placeholder="例:0000" required>
                     <span></span>
                   </div>
                 </td>
@@ -343,7 +349,7 @@
               <tr>
                 <th class="require">E-mail</th>
                 <td>
-                  <input type="email" id="email" name="email" required>
+                  <input type="email" id="email" name="email" placeholder="sample@example.com" required>
                   <span></span> </td>
               </tr>
 
@@ -360,7 +366,7 @@
               <tr id="douhan">
                 <th class="require">人数</th>
                 <td>
-                  <input type="number" value="0" min="0" max="10" required>名
+                  <input type="number" value="1" min="1" max="10" required>名
                   <span></span> </td>
               </tr>
             </tbody>

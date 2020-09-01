@@ -58,6 +58,16 @@ h1 {
   margin-top: 3px;
 }
 
+/* 挨拶 */
+
+.greeting h2 {}
+
+/* 注意 */
+
+.attention {
+  color: red;
+}
+
 /* フォーム全体 */
 
 table {
@@ -71,6 +81,7 @@ label {
 
 th {
   width: 140px;
+  text-align: left;
 }
 
 tr {
@@ -102,6 +113,18 @@ tr {
   display: none;
 }
 
+/* 郵便番号 */
+
+.item .yuubinn1 {
+  margin-right: 10px;
+  width: 100px;
+}
+
+.item .yuubinn2 {
+  margin-left: 10px;
+  width: 100px;
+}
+
 /* 氏名 */
 
 .inline {
@@ -119,6 +142,20 @@ label[for="first_name"], label[for="first_name_kana"], label[for="family_name"],
 
 label[for="first_name"], label[for="first_name_kana"] {
   margin-left: 60px;
+}
+
+/* 電話番号 */
+
+.tel1 {
+  margin-right: 10px;
+}
+
+.tel2 {
+  margin: 0 10px;
+}
+
+.tel3 {
+  margin-left: 10px;
 }
 
 /* 送信ボタン */
